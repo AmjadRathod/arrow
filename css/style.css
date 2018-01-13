@@ -1,0 +1,113 @@
+section{
+    height: 500px;
+    width: 100%;
+}
+body{
+    text-align: center;
+    color: #616161;
+}
+h3{
+    padding-top: 25px;
+    color: #2980b9;
+}
+.home-portfolio-section, .home-office-section, .home-contact-section, h3{
+    color: white;
+}
+.section-opacity{
+    background: black;
+    opacity: 0.6;
+    height: 100%;
+}
+/*--------------  header section-------------------*/
+.home-header-section{
+    background-image: url(../Images/hero-01.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgba(255,255,255,0.8);
+    height: auto;
+}
+.navbar-inverse{
+    background: none; !imaportant;
+    border: none;
+}
+.navbar-right ul li a{
+    color: rgba(255,255,255,0.7);
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    background: transparent;
+    
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border: transparent;
+    border-color: none;
+}
+.navbar-collapse{
+    box-shadow: none;
+}
+.arrow-logo{
+    padding-top: 200px;
+    margin: auto 0;
+    padding-bottom: 25px;
+    width: 75px;
+    
+}
+.text-center a{
+    padding-top: 8px;
+    border: solid 1px white;
+    border-radius: 5px;
+    display: inline-table;
+    width: 125px;
+    height: 35px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 7px;
+}
+.scroll-down{
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+/*--------------  service section-------------------*/
+.home-service-section,  h3{
+    color: #2980b9;
+    padding-bottom: 50px;
+}
+.home-service-section img, h4{
+    padding-bottom: 10px;
+}
+/*--------------  portfolio section-------------------*/
+.home-portfolio-section{
+    background-image: url(../Images/hero-02.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: auto;
+}
+.portfolio-box{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+.home-portfolio-section img{
+    height: 175px;
+    width: 250px;
+}
+/*--------------  team section-------------------*/
+.home-team-section{
+    
+}
+/*--------------  office section-------------------*/
+.home-office-section{
+    background-image: url(../Images/hero-03.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+/*--------------  client section-------------------*/
+.home-client-section{
+    
+}
+/*--------------  contact section-------------------*/
+.home-contact-section{
+    background-image: url(../Images/hero-04.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
