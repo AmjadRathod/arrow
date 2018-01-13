@@ -1,3 +1,11 @@
+@-webkit-keyframes display-icon {
+    0%   {
+    padding-top: 0;
+  }
+100%   {
+    padding-top: 75px;
+  }  
+}
 section{
     height: 500px;
     width: 100%;
@@ -14,8 +22,7 @@ h3{
     color: white;
 }
 .section-opacity{
-    background: black;
-    opacity: 0.6;
+    background: rgba(0,0,0,0.5);
     height: 100%;
 }
 /*--------------  header section-------------------*/
@@ -66,12 +73,14 @@ h3{
     padding-bottom: 50px;
 }
 /*--------------  service section-------------------*/
-.home-service-section,  h3{
+.home-service-section h3, .home-team-section h3, .home-client-section h3{
     color: #2980b9;
-    padding-bottom: 50px;
 }
 .home-service-section img, h4{
     padding-bottom: 10px;
+}
+.home-service-section img{
+    padding-top: 50px;
 }
 /*--------------  portfolio section-------------------*/
 .home-portfolio-section{
@@ -91,7 +100,58 @@ h3{
 }
 /*--------------  team section-------------------*/
 .home-team-section{
-    
+    height: auto;
+}
+.team-box{
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+.team-box p{
+    color: #2980b9;
+}
+.team-box i{
+    color: #2980b9;
+}
+.team-box-img1:hover, .team-box-img2:hover, .team-box-img3:hover .team-box-opacity, .team-box-img4:hover .team-box-opacity {
+    height: 160px;
+    width: 160px;
+    background: rgba(92,153,193,0.5);
+}
+.team-box-img1{
+    background-image: url(../Images/team1.jpg);
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-box-img2{
+    background-image: url(../Images/team2.jpg);
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-box-img3{
+    background-image: url(../Images/team3.jpg);
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    background-position: center;
+}
+
+.team-box-img4{
+    background-image: url(../Images/team4.jpg);
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    background-position: center;
+}
+.team-box-icon:hover{
+    height: 150px;
+    width: 150px;
+    background: rgba(97,157,198,0.5);
 }
 /*--------------  office section-------------------*/
 .home-office-section{
@@ -100,9 +160,43 @@ h3{
     background-size: cover;
     color: white;
 }
+.home-office-section h3, .home-team-section h3{
+    padding-bottom: 25px;
+}
 /*--------------  client section-------------------*/
 .home-client-section{
-    
+    height: auto;
+}
+.home-client-section img{
+    width: 100px;
+    margin: auto;
+}
+.client-box{
+    padding-top: 25px;
+}
+.client-box img:hover{
+    cursor: pointer;
+}
+.client-box-navigate{
+    margin-top: 5px;
+    border: solid 0.5px #2980b9
+}
+.carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+}
+
+#text-carousel {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+.carousel-control.left, .carousel-control.right{
+    background: none;
+}
+.glyphicon{
+    color: #2980b9;
 }
 /*--------------  contact section-------------------*/
 .home-contact-section{
@@ -110,4 +204,14 @@ h3{
     background-position: center;
     background-size: cover;
     color: white;
+}
+.contact-box{
+    padding-top: 25px;
+}
+.home-contact-section a img{
+    height: 100px;
+    width: 100px;
+}
+.copy-right {
+    padding-top: 150px;
 }
