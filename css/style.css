@@ -4,7 +4,7 @@
   }
 100%   {
     padding-top: 75px;
-  }  
+  }
 }
 section{
     height: 500px;
@@ -42,7 +42,7 @@ h3{
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
     background: transparent;
-    
+
 }
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
     border: transparent;
@@ -56,7 +56,7 @@ h3{
     margin: auto 0;
     padding-bottom: 25px;
     width: 75px;
-    
+
 }
 .text-center a{
     padding-top: 8px;
@@ -98,6 +98,12 @@ h3{
     height: 175px;
     width: 250px;
 }
+.portfolio-box img:hover{
+  height: 175px;
+  width: 250px;
+  background: rgba(92,153,193,0.5);
+  cursor: pointer;
+}
 /*--------------  team section-------------------*/
 .home-team-section{
     height: auto;
@@ -112,10 +118,28 @@ h3{
 .team-box i{
     color: #2980b9;
 }
-.team-box-img1:hover, .team-box-img2:hover, .team-box-img3:hover .team-box-opacity, .team-box-img4:hover .team-box-opacity {
+.team-box-img1:hover .team-box-opacity, .team-box-img2:hover .team-box-opacity, .team-box-img3:hover .team-box-opacity, .team-box-img4:hover .team-box-opacity {
     height: 160px;
     width: 160px;
     background: rgba(92,153,193,0.5);
+    animation-name: display-icon;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+.team-box-opacity:hover a {
+  display: inline-block;
+  background: white;
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  padding-top: 6px;
+}
+.team-box-opacity a{
+  display: none;
 }
 .team-box-img1{
     background-image: url(../Images/team1.jpg);
@@ -152,6 +176,7 @@ h3{
     height: 150px;
     width: 150px;
     background: rgba(97,157,198,0.5);
+
 }
 /*--------------  office section-------------------*/
 .home-office-section{
