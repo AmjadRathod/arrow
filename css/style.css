@@ -3,12 +3,10 @@
     padding-top: 0;
   }
 100%   {
-    padding-top: 75px;
+    padding-top: 40%;
   }
 }
 section{
-    height: 500px;
-    width: 100%;
 }
 body{
     text-align: center;
@@ -33,6 +31,9 @@ hr {
     background: #2980b9;
     width: 40px;
     border-top-color: #2980b9;
+}
+#office hr, #team hr{
+  margin-top: -30px;
 }
 /*--------------  header section-------------------*/
 .home-header-section{
@@ -82,6 +83,9 @@ hr {
     padding-top: 200px;
     padding-bottom: 50px;
 }
+.scroll-down a{
+  border: none;
+}
 /*--------------  service section-------------------*/
 .home-service-section h3, .home-team-section h3, .home-client-section h3{
     color: #2980b9;
@@ -107,32 +111,33 @@ hr {
     padding-bottom: 200px;
 }
 .home-portfolio-section img{
-    height: 175px;
-    width: 250px;
-
+    height: 100%;
+    width: 100%;
 }
 .image{
   padding-left: 0px;
    position: relative;
+   height: 175px;
+   width: 250px;
 }
 .image p{
   color: white;
-  top: 40px;
-  left: 30px;
+  top: 20%;
+  left: 10%;
   position: absolute;
   font-size: 20px;
   display: none;
 }
 .image i{
-  top: 100px;
-  left: 100px;
+  top: 55%;
+  left: 38%;
   position: absolute;
   color: rgb(92,153,193);
   background: white;
   border-radius: 100%;
-  padding-top: 10px;
-  height: 60px;
-  width: 60px;
+  padding-top: 2%;
+  height: 30%;
+  width: 25%;
   display: none;
 }
 .image:hover p, .image:hover i{
@@ -168,8 +173,8 @@ hr {
     color: #2980b9;
 }
 .team-box-img1:hover .team-box-opacity, .team-box-img2:hover .team-box-opacity, .team-box-img3:hover .team-box-opacity, .team-box-img4:hover .team-box-opacity {
-    height: 160px;
-    width: 160px;
+    height: 100%;
+    width: 100%;
     background: rgba(92,153,193,0.5);
     animation-name: display-icon;
     animation-duration: 1.2s;
@@ -296,10 +301,41 @@ hr {
 .copy-right {
     padding-top: 150px;
 }
+@media only screen and (max-width: 1024px){
+  body{
+    font-size: 18px;
+  }
+  .image{
+    width: 206px;
+  }
+  .team-box{
+    width: 130px;
+  }
+  .team-box-img1, .team-box-img2, .team-box-img3, .team-box-img4{
+    width: 130px;
+  }
+  .client-box img{
+    width: 90px;
+    margin-left: -10px;
+  }
+}
 @media only screen and (max-width: 786px){
   section{
     height: auto;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); !imaportant
+  }
+  nav ul li a{
+    text-align: right;
+  }
+  .home-contact-section, .home-portfolio-section,
+  .home-office-section,
+  .home-header-section{
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+  }
+  .image i{
+  
+  }
+  .image{
+    width: 123%;
   }
   .team-section-box{
     padding-bottom: 50px;
@@ -309,13 +345,20 @@ hr {
     padding-bottom: 25px;
     margin-left: 75px;
   }
-  .team-box p, .team-box small{
-    margin-right: 90px;
+  .team-box{
+    text-align: center;
   }
   .team-box p
   {
     margin-bottom: -5px;
     margin-top: 5px;
+  }
+  .portfolio-box{
+    margin-bottom: 25px;
+  }
+  .client-box img{
+    width: 80%;
+    height: 80%;
   }
   .home-service-section img{
     height: 100px;
